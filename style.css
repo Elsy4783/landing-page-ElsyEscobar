@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla";
+  font-size: 18px;
+}
+
+body {
+  background-color: rgb(109, 103, 103);
+}
+
+header {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  background-color: rgb(248, 224, 252);
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header .logo {
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.header .logo img {
+  height: 85px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-right: 60px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .nav-links li:first-child > a {
+  font-weight: 600;
+}
+
+.header .nav-links .caja {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: rgb(110, 184, 202);
+  padding: 3px;
+}
+.header .nav-links li a:hover {
+  color: black;
+}
