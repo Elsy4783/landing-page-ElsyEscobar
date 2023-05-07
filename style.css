@@ -8,21 +8,21 @@
 }
 
 :root {
-  --gris: rgb(167, 165, 165);
+  --gris: rgb(49, 59, 88);
   --azul: rgb(44, 93, 150);
   --blanco: white;
-  --rojo: red;
+  --rojo: rgb(136, 9, 9);
 }
 
 header {
-  background-image: url(imagenes/bandera_vzla.jpg);
+  background-color: var(--azul);
   background-size: 11%;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  height: 90px;
+  height: 70px;
   width: 100%;
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 .header .logo img {
-  height: 80px;
+  height: 60px;
   width: auto;
   transition: all 0.3s;
 }
@@ -66,17 +66,18 @@ header {
   background-color: var(--blanco);
   padding: 3px;
   position: relative;
-  top: 25px;
 }
 
 .header .nav-links li a:hover {
-  color: black;
+  color: var(--rojo);
 }
 
 body {
   background-color: var(--blanco);
   width: 100%;
 }
+
+/*main*/
 
 main {
   display: flex;
@@ -89,9 +90,10 @@ main {
 
 #hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 0px;
+  width: 90%;
   max-width: 1200px;
   margin-top: 160px;
 }
@@ -105,9 +107,8 @@ main {
 
 .hero-info h1 {
   font-size: 50px;
-  min-width: 500px;
+  min-width: 300px;
   font-weight: 800;
-  color: var(--azul);
   text-align: center;
   margin-right: 60px;
 }
@@ -115,7 +116,7 @@ main {
 .hero-info p {
   font-size: 18px;
   width: 90%;
-  color: var(--azul);
+
   text-align: justify;
 }
 
@@ -126,7 +127,7 @@ main {
 
 .hero-logo {
   width: 45%;
-  padding: 10px 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +135,7 @@ main {
 
 #info {
   display: flex;
-  padding: 30px 0;
+  padding: 30px 0px;
   max-width: 1200px;
   justify-content: center;
   align-items: center;
@@ -146,8 +147,7 @@ main {
   font-size: 30px;
   width: 100%;
   min-width: 500px;
-  font-weight: 800;
-  color: var(--azul);
+  font-weight: 500;
   text-align: center;
   margin-left: 120px;
 }
@@ -155,8 +155,7 @@ main {
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 30px 0;
+  padding: 30px 0px;
   width: 100%;
   gap: 60px;
 }
@@ -179,18 +178,17 @@ main {
 }
 
 .discover-text h2 {
-  font-size: 30px;
+  font-size: 35px;
   width: 100%;
   min-width: 500px;
   font-weight: 800;
-  color: var(--azul);
   text-align: center;
+  padding: 20px;
 }
 
 .discover-text p {
   font-size: 18px;
   width: 100%;
-  color: var(--azul);
   text-align: justify;
 }
 
@@ -202,4 +200,23 @@ main {
 .discover-text p a {
   font-size: 18px;
   font-weight: 600;
+}
+
+.btn-participa {
+  display: flex;
+  justify-content: right;
+  gap: 50px;
+}
+
+.btn-participa a {
+  text-decoration: none;
+  border: 3px;
+  background-color: var(--azul);
+  border-radius: 12px;
+  color: white;
+  padding: 5px 15px;
+}
+
+.btn-participa :hover {
+  transform: scale(1.1);
 }
