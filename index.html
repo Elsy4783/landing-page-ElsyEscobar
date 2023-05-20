@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asoven Litoral</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f2cdfdcb56.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
       <div class="logo">
         <img src="imagenes/Imagen1.png" alt="Logo Personal" />
       </div>
-      <nav>
+      <div class="toogle">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+      </div>
+      <nav class="navbar">
         <ul class="nav-links">
           <li class="caja"><a href="#">Home</a></li>
           <li class="caja"><a href="#">Quienes somos</a></li>
           <li class="caja"><a href="#">Actividades</a></li>
-          <li class="caja"><a href="#">Contacto</a></li>
+          <li class="caja"><a href="#footer">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -45,28 +55,115 @@
           Nuestra principal misión es brindar contención y apoyo a todos los
           venezolanos que llegan a Argentina cargados de sueños y metas.
         </p>
-
       </section>
 
       <section id="discover">
         <div class="discover-info">
-          <img src="imagenes/convcatoria.jpg" alt="invitacion a feria de colectividades">
+          <img
+            src="imagenes/convcatoria.jpg"
+            alt="invitacion a feria de colectividades"
+          />
         </div>
         <div class="discover-text">
           <h2>Fiesta de Colectividades de Santa Fe</h2>
           <p>
-           Durante el mes de agosto del 2023 diremos presente en la gran <span>Fiesta de Colectividades</span> en la que por primera vez se contará con un Stan de Venezuela, que mostrará toda su cultura. 
-          </p>        
+            Durante el mes de agosto del 2023 diremos presente en la gran
+            <span>Fiesta de Colectividades</span> en la que por primera vez se
+            contará con la representación de Venezuela, que mostrará toda su
+            cultura.
+          </p>
           <p>
-            Esta gran fiesta se viene realizando desde el año ....... y es organizada por ....... Se llevará a cabo los dias 2 2 2 de Agosto en djhjdshgkdg. sdjflksjdhfks dhvnvnvvvvvvv ysadgfouay.  
+            Esta gran fiesta se viene realizando desde el año 1993 y es
+            organizada por la
+            <span>Asociación Santafesina de Colectividades</span> y Se llevará a
+            cabo los dias 19, 20 y 21 de Agosto 2023.
           </p>
           <div class="btn-participa">
             <a href="#" class="participar">Mas Info</a>
             <a href="#" class="participar">Quiero Participar</a>
           </div>
-          
         </div>
-       
+      </section>
+
+      <section id="actividades">
+        <div class="container">
+          <h2>Conoce alguna de nuestras actividades</h2>
+          <div class="row">
+            <div class="column">
+              <div class="alma_llanera">
+                <h3>Feria "Alma Llanera"</h3>
+                <p>
+                  Declarada de Interés Nacional y de interés Provincial por la
+                  Municipalidad de Santa Fe. Se realizan en Pje. Falucho 2450,
+                  lugar donde decenas de Venezolanos exponen sus emprendimientos
+                  gastronómicos, manualidades, de servicios, entre otros, con el
+                  apoyo de <span>Capital Activa</span>
+                </p>
+                <div class="navidad">
+                  <h3>Fiestas Navideñas</h3>
+                  <p>
+                    Actividad que se lleva a cabo durante el mes de Diciembre,
+                    en la que se reúnen los Venezolanos a compartir y celebrar
+                    en unión familiar. Se realizan actividades recreativas para
+                    niños y adultos, juegos y entrega de regalos para los mas
+                    pequeños de la casa.
+                  </p>
+                </div>
+                <div class="entregas"></div>
+                <h3>Entrega de Alimentos y Ropa</h3>
+                <p>
+                  Desde su fundación se vienen realizando actividades solidarias
+                  con nuestros hermanos venezolanos a fin de brindar una ayuda a
+                  los que más lo necesitan.
+                </p>
+              </div>
+            </div>
+            <div class="column2">
+              <div class="card">
+                <img src="/imagenes/carrusel/2.jpg" alt="feria1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="parte1">
+        <div class="logo">
+          <a href="#">
+            <img src="/imagenes/logo_asoven_tricolor.jpg" alt="Logo Asoven" />
+          </a>
+        </div>
+
+        <div class="box2">
+          <h2>CONTACTO</h2>
+          <p><span>Presidenta:</span> Ibacibet Pérez Meza</p>
+          <p><span>e-mail:</span> iba.villarruel@yahoo.com</p>
+          <div class="whatsapp_icon">
+            <a
+              href="https://wa.link/y3jf9p"
+              target="_blank"
+              class="fa-brands fa-whatsapp"
+            ></a>
+            <h3>+54 9 342 4427155</h3>
+          </div>
+        </div>
+
+        <div class="box1">
+          <h2>SÍGUENOS</h2>
+          <div class="redes_sociales">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+      <div class="parte2">
+        <small
+          >&copy; 2023 - <b>Asoven Del Litoral</b> - Todos los derechos
+          reservados.</small
+        >
+      </div>
+    </footer>
   </body>
 </html>
